@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>NEED STRONG PASSWORD ? <br>Generate Your Password</h1>
+    <div class="block11">
+        <div class="block1">
+            <button id="generate">Generate Password</button>
+            <input type="text" id="password" readonly>
+        </div>
+        <div class="container">
+            <div class="options">
+
+                <div class="op">
+                    <label for="length">Length </label>
+                    <input type="number" id="length" min="6">
+                </div>
+
+                <div class="op">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase"> Lower-Case </label>
+                </div>
+
+                <div class="op">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase"> Upper-Case</label>
+                </div>
+
+                <div class="op">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols"> Symbols </label>
+                </div>
+
+                <div class="op">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers"> Numbers</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="pg.js"></script>
+</body>
+
+</html>

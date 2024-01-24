@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@media screen and (min-width:874px) {
+    .block1 {
+        background-color: #38AECC;
+        padding: 3rem 0rem 1rem 0rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .container {
+        background-color: black;
+        background-color: #5a6882;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+
+    .options {
+        object-fit: contain;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        width: 30vw;
+        height: 40vh;
+        font-size: larger;
+    }
+
+    .block11 {
+        margin: 0rem 15rem 3rem 15rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    margin: 1rem 0rem 1rem 0rem;
+    line-height: 3rem;
+}
+
+#generate {
+    background-color: white;
+    color: #122932;
+    margin: 0rem 0rem 0.5rem 0rem;
+    padding: 9px;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#password {
+    border: 2px solid white;
+    width: 23rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#length {
+    border: 2px solid white;
+    width: auto;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.options input {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.op {
+    display: flex;
+    align-items: center;
+}
+
+#lowercase,
+#uppercase,
+#symbols,
+#numbers {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
