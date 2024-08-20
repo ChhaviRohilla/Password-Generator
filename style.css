@@ -1,16 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    /* text-align: center; */
+}
+body{
+    /* margin: 0;
+    padding: 0; */
     background-color: black;
     color: white;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
-
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    justify-items: center;
 }
 
-@media screen and (min-width:874px) {
+
+/* @media screen and (min-width:874px) { */
     .block1 {
         background-color: #38AECC;
         padding: 3rem 0rem 1rem 0rem;
@@ -18,33 +25,66 @@
     }
 
     .container {
+        /* height: max-content; */
+        /* width: fit-content; */
+
         background-color: black;
         background-color: #5a6882;
-        object-fit: contain;
+        /* object-fit: contain; */
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
         border-radius: 0rem 0rem 1rem 1rem;
+        /* color: black; */
     }
 
     .options {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
         object-fit: contain;
         margin: 1.5rem;
         padding: 1.5rem;
         border-radius: 1rem;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
         width: 30vw;
+        min-width: 40%;
         height: 40vh;
-        font-size: larger;
+        /* font-size: larger; */
+        font-size: clamp(1.25rem, 6vw, 15px);
     }
 
     .block11 {
-        margin: 0rem 15rem 3rem 15rem;
+        /* margin: 0rem 15rem 3rem 15rem; */
         border-radius: 1rem;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        width: 60%;
+        height: max-content;
     }
-}
+    @media screen and (max-width:874px){
+        .block11 {
+            width: 90%;
+        }
+        .options {
+            min-width: 70%;
+        }
+        
+    }
+    @media screen and (max-width:359px){
+        .block1{
+            background-color: black;
+        }
+        .container {
+            background-color: black;
+        }
+        .options{
+            margin: 0px;
+        }
+    }
+/* } */
 .container{
     display:flex;
     align-items: center;
@@ -68,18 +108,25 @@ h1 {
 
 #password {
     border: 2px solid white;
-    width: 23rem;
+    background-color: black;
+    color: white;
+    width: 16rem;
     height: 2.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
+    text-align: center;
 }
 
 #length {
     border: 2px solid white;
-    width: auto;
+    display: flex;
+    text-align: center;
+    width: 7rem;
     height: 2rem;
     border-radius: 1rem;
+    background-color: black;
+    color: white;
 }
 
 label {
@@ -90,13 +137,15 @@ label {
 
 .options input {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     margin: 0.5rem;
 }
 
 .op {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #lowercase,
